@@ -90,35 +90,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 new SimpleLightbox('.gallery .gallery-link', {
-  captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
-  captionPosition: 'bottom',
+  captionsData: 'alt',
   captionDelay: 250,
 });
-
-// let lightbox = new SimpleLightbox('.gallery-link');
-// lightbox.on('show.simplelightbox', function () {
-//   captions: true;
-//   download: true;
-//   sourceAttr: 'data-sourse';
-//   captionSelector: 'img';
-//   captionType: 'attr';
-//   captionPosition: 'bottom';
-//   captionDelay: 250;
-//   showCounter: false;
-// });
-
-// gallery.addEventListener('click', clickFoo);
-
-// function clickFoo(event) {
-// if (event.target.classList.contains('gallery')) {
-//   return;
-// }
-//   event.preventDefault();
-//   basicLightbox
-//     .create(
-//       `<img src="${event.target.dataset.source}" width="1112" height="640">`
-//     )
-//     .show();
-// }
