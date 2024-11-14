@@ -92,4 +92,5 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 new SimpleLightbox('.gallery .gallery-link', {
   captionsData: 'alt',
   captionDelay: 250,
+  overlayOpacity: 0.8,
 });
