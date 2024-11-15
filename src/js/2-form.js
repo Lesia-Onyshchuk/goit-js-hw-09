@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', reloadFoo);
 function reloadFoo() {
   const storageData = localStorage.getItem(localStorageKey);
   if (storageData) {
-    const pageReboot = JSON.parse(localStorage.getItem(localStorageKey));
+    const pageReboot = JSON.parse(storageData);
     input.value = pageReboot.email;
     textArea.value = pageReboot.message;
     formData.email = pageReboot.email;
